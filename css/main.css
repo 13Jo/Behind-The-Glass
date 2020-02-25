@@ -1,2 +1,95 @@
 @charset "UTF-8";
 /* CSS Document */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+4.0 - Elements: styling for bare/generic HTML elements 
+        - Forms
+        - Lists
+        - Media
+        - Tables
+        - Typography: Headings, Paragraphs, Blockquotes, Anchors
+5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+        - Framework
+6.0 - Components: specific designed components
+        - Buttons
+        - Header
+        - Navigation 
+7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+        - Alignment	    
+        - Color
+        - Size
+
+
+/*-------6.0 COMPONENTS-------*/
+
+/*---hero section---*/
+
+.hero-section {
+    height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url(../img/bg-hero) center center no-repeat;
+  background-size: cover;
+}
+  
+  .hero-section .middle-content-section {
+    text-align: center;
+    color: #fefefe;
+  }
+  
+  .hero-section .top-content-section {
+    width: 100%;
+  }
+  
+  .hero-section .bottom-content-section {
+    padding: 1rem;
+  }
+  
+  .hero-section .bottom-content-section svg {
+    height: 3.75rem;
+    width: 3.75rem;
+    fill: #fefefe;
+  }
+  
+  .hero-section .top-bar {
+    background: transparent;
+  }
+  
+  .hero-section .top-bar .menu {
+    background: transparent;
+  }
+  
+  .hero-section .top-bar .menu-text {
+    color: #fefefe;
+  }
+  
+  .hero-section .top-bar .menu li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .hero-section .top-bar .menu a {
+    color: #fefefe;
+    font-weight: bold;
+  }
+  
+  
