@@ -10,20 +10,29 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+
     <header>
-      <div class="grid-x grid-container">
-        <div class="cell small-4">
-         <h1> Behind the Glass <br><span>Comic Art Gallery</span></h1>
-        </div>
-        <div class="cell small-8">
-          <nav>
-            <ul class="menu align-right">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Store</a></li>
-              <li><a href="#">Contact</a></li>
+      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+        <div class="title-bar-title">Behind The Glass</div>
+      </div>
+      
+      <div class="top-bar" id="example-menu">
+        <div class="top-bar-left">
+          <div class="hide-for-small-only">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li class="menu-text">Behind The Glass</li>
             </ul>
-          </nav>
+          </div>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
       </div>
     </header>
