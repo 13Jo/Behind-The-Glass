@@ -28,7 +28,7 @@
 /*-------5.0 OBJECTS-------*/
 
 @media screen and (max-width: 39.9375em) {
-  #about img {
+  #about img, #store img {
       display: none;
   }
 }
