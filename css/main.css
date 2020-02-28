@@ -24,7 +24,25 @@
         - Color
         - Size
 
+/*-------4.0 ELEMENTS-------*/
 
+/*---typography---*/
+
+body {
+  font-family: 'Spartan', 'sans-serif';
+}
+
+.title-bar-title, .menu-text, h2 {
+  font-family: 'Bangers', sans-serif;
+}
+
+#example-menu li, h2, .title-bar-title {
+  color: #FFB405;
+}
+
+header, footer, .top-bar-right a {
+  color: #fff;
+}
 /*-------5.0 OBJECTS-------*/
 
 @media screen and (max-width: 39.9375em) {
@@ -54,6 +72,18 @@
   background: url(../img/bg-hero) center center no-repeat;
   background-size: cover;
 }
+
+/*---navigation---*/
+
+/*---------7.0 UTILITIES-------------*/
+
+section {
+  padding: 5em 0;
+}
+
+/*---colors---*/
  
-  
+footer {
+  background-color: #141414;
+}
   
