@@ -51,6 +51,28 @@ header, footer, .top-bar-right a {
 
 /*-------5.0 OBJECTS-------*/
 
+.title-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 39.9375em) {  
+  .top-bar {
+    top: 2.5rem;
+  }
+}
+
 @media screen and (max-width: 39.9375em) {
   #about img, #store img, #museum img {
       display: none;
@@ -58,6 +80,10 @@ header, footer, .top-bar-right a {
 }
 
 /*-------6.0 COMPONENTS-------*/
+
+/*---buttons---*/
+
+
 
 /*---hero section---*/
 
