@@ -75,7 +75,7 @@ header, footer, .top-bar-right a {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url(../img/bg-hero) center center no-repeat;
+  background: url(../img/btg_001.jpg) center center no-repeat;
   background-size: cover;
 }
 
