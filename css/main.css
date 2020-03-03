@@ -34,18 +34,30 @@ body {
 
 .title-bar-title, .menu-text, h2, .callout {
   font-family: 'Bangers', sans-serif;
+  
 }
 
-h3 {
-  font: 700 1rem 'Spartan', 'sans-serif';
+h2, .callout {
+  -webkit-text-stroke: .1rem black;
+  font-size: 3rem;
+}
+
+h3, .title-bar-title span, .menu-text span {
+  font: 500 1rem 'Spartan', 'sans-serif';
 }
 
 #example-menu li, h2, .title-bar-title, .callout {
   color: #FFB405;
 }
 
-header, footer, .top-bar-right a {
+header, footer, .top-bar-right a, .title-bar-title span, .menu-text span {
   color: #fff;
+}
+
+/*---images---*/
+
+#about img, #store img, #museum img {
+  border: .2em solid #141414;
 }
 
 
@@ -83,6 +95,45 @@ header, footer, .top-bar-right a {
 
 /*---buttons---*/
 
+.button {
+  background-color: #141414;
+  color: #fff;
+  border: .2em solid #141414;
+}
+
+.button:hover  {
+  background-color: #FFB405;
+  font-family: 'Sriracha', 'sans-serif';
+  color: #141414;
+  border: .2em solid #141414;   
+}
+
+/*---cards---*/
+
+.card .card-divider:first-child {
+  background-color: #FFB405;
+  color: #141414;
+  border: .1em solid #141414;
+}
+
+
+/*---footer---*/
+
+footer li {
+  list-style: none;
+}
+
+footer ul {
+  font-size: 2rem;
+}
+
+.fab {
+  color: #FFB405; 
+}
+
+
+
+
 
 
 /*---hero section---*/
@@ -106,6 +157,20 @@ header, footer, .top-bar-right a {
 }
 
 /*---navigation---*/
+
+.top-bar-right a {
+  font-weight: 300;
+}
+
+.top-bar-right a:hover {
+  color: #141414;
+}
+
+.top-bar-right li:hover {
+  background-color: #FFB405;
+  font-family: 'Sriracha', 'sans-serif';
+}
+
 
 /*---------7.0 UTILITIES-------------*/
 
