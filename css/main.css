@@ -31,6 +31,7 @@
 input {
   border: .1em solid transparent;
 }
+
 input:hover, textarea:hover {
   border: .1em solid #FFB405;
 }
@@ -69,7 +70,7 @@ h3, .title-bar-title span, .menu-text span, footer span {
   color: #FFB405;
 }
 
-header, footer, .top-bar-right a, .title-bar-title span, .menu-text span, footer span {
+header, footer, .top-bar-right a, .title-bar-title span, .menu-text span, footer span, #store, #museum {
   color: #fff;
 }
 
@@ -87,7 +88,7 @@ header, footer, .top-bar-right a, .title-bar-title span, .menu-text span, footer
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
 }
 
 .top-bar {
@@ -95,12 +96,28 @@ header, footer, .top-bar-right a, .title-bar-title span, .menu-text span, footer
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
+}
+
+.title-bar, .top-bar {
+  background-image: url("../img/title_bar_bg.png");
+  background-position: top left;
+  background-repeat: repeat-y;
+}
+
+.top-bar ul {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 39.9375em) {
+  .top-bar {
+    background-image: none;
+  }
 }
 
 @media screen and (max-width: 39.9375em) {  
   .top-bar {
-    top: 2.5rem;
+    top: 4rem;
   }
 }
 
@@ -199,6 +216,17 @@ footer ul {
   font-family: 'Sriracha', 'sans-serif';
 }
 
+/*---sections---*/
+
+#store, #museum {
+  position: relative;
+}
+
+#store-text, #museum-text {
+  position: relative;
+  z-index: 2;
+}
+
 
 
 /*---------7.0 UTILITIES-------------*/
@@ -209,7 +237,37 @@ section, footer {
 
 /*---colors---*/
  
-footer {
-  background-color: #141414;
+.gray-bg {
+  background-color: #504E4E;
 }
-  
+
+.fade-bg {
+  background-image: url("../img/bg_fade_01.jpg");
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.spot-halftone {
+  width: 40rem;
+  height: 40rem;
+  content: url(../img/halftone_spot.png);
+  position: absolute;
+  z-index: 1;
+}
+
+#store .spot-halftone {
+  top: -5rem;
+  left: 1rem;
+}
+
+#museum .spot-halftone {
+  top: -4rem;
+  right: 5rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .spot-halftone {
+      display: none;
+  }
+}
