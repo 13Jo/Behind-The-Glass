@@ -52,18 +52,28 @@ body {
   font-family: 'Spartan', 'sans-serif';
 }
 
-.title-bar-title, .menu-text, h2, .callout, h4 {
+h1, li.menu-text {
+  text-transform: uppercase;
+}
+
+h1, .title-bar-title, li.menu-text, h2, .callout, h4 {
   font-family: 'Bangers', sans-serif;
-  
 }
 
-h2 {
+h1, h2,  li.menu-text {
   -webkit-text-stroke: .1rem black;
-  font-size: 3rem;
 }
 
-h3, .title-bar-title span, .menu-text span, footer span {
-  font: 500 1rem 'Spartan', 'sans-serif';
+h1 span, h3, .menu-text span, footer span {
+  font-family: 'Spartan', 'sans-serif';
+}
+
+h1 span, h3, .menu-text span, footer span {
+  font-weight: 500;
+}
+
+h3, .menu-text span, footer span {
+  font-size: 1rem;
 }
 
 #example-menu li, h2, .title-bar-title, .callout, h4 {
@@ -72,6 +82,30 @@ h3, .title-bar-title span, .menu-text span, footer span {
 
 header, footer, .top-bar-right a, .title-bar-title span, .menu-text span, footer span, #store, #museum {
   color: #fff;
+}
+
+h1 {
+  line-height: 1.15rem;
+  margin: 0.25rem 0 0 0.75rem;
+}
+
+h1, li.menu-text {
+  font-size: 2rem;
+}
+
+.menu .menu-text {
+  font-weight: normal;
+  line-height: 1.1rem;
+}
+
+h1 span, li.menu-text span {
+  -webkit-text-stroke: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.16rem;
+}
+
+h2 {
+  font-size: 3rem;
 }
 
 /*---images---*/
@@ -117,7 +151,7 @@ header, footer, .top-bar-right a, .title-bar-title span, .menu-text span, footer
 
 @media screen and (max-width: 39.9375em) {  
   .top-bar {
-    top: 4rem;
+    top: 3.9rem;
   }
 }
 
