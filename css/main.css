@@ -68,7 +68,7 @@ h1 span, h3, .menu-text span, footer span {
   font-family: 'Spartan', 'sans-serif';
 }
 
-h1 span, h3, .menu-text span, footer span {
+h1 span, h3, .menu-text span, footer span, .top-bar-right a {
   font-weight: 500;
 }
 
@@ -175,7 +175,7 @@ h2 {
   background-color: #FFB405;
   font-family: 'Sriracha', 'sans-serif';
   color: #141414;
-  border: .2em solid #141414;   
+  border: .2em solid #141414; 
 }
 
 /*---callout---*/
@@ -215,6 +215,10 @@ footer ul {
 }
 
 
+
+/*---gallery---*/
+
+
 /*---hero section---*/
 
 .hero-section {
@@ -237,9 +241,6 @@ footer ul {
 
 /*---navigation---*/
 
-.top-bar-right a {
-  font-weight: 300;
-}
 
 .top-bar-right a:hover {
   color: #141414;
