@@ -52,7 +52,7 @@ body {
   font-family: 'Spartan', 'sans-serif';
 }
 
-h1, li.menu-text {
+h1, li.menu-text, nav ul.menu, button {
   text-transform: uppercase;
 }
 
@@ -169,6 +169,7 @@ h2 {
   background-color: #141414;
   color: #fff;
   border: .2em solid #141414;
+  width: 100%;
 }
 
 .button:hover  {
@@ -177,6 +178,14 @@ h2 {
   color: #141414;
   border: .2em solid #141414; 
 }
+
+@media screen and (min-width: 40em) {
+  .button {
+    width: 10rem;
+  }
+}
+
+
 
 /*---callout---*/
 
@@ -216,7 +225,17 @@ footer ul {
 
 
 
-/*---gallery---*/
+/*---orbit---*/
+
+/*---
+.orbit-wrapper {
+  height: 100vh;
+}
+
+ul.orbit-container {
+  height: 100vh;
+}
+---*/
 
 
 /*---hero section---*/
@@ -249,6 +268,23 @@ footer ul {
 .top-bar-right li:hover {
   background-color: #FFB405;
   font-family: 'Sriracha', 'sans-serif';
+}
+
+nav ul.menu {
+  display: block;
+}
+
+nav ul.menu li {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 40em) {
+  nav ul.menu {
+    display: inline-flex;
+  }
+  nav ul.menu li {
+    font-size: 1rem;
+  }
 }
 
 /*---sections---*/
