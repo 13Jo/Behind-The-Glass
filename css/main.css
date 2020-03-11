@@ -260,16 +260,10 @@ footer ul {
 
 /*---orbit---*/
 
-/*---
-.orbit-wrapper {
-  height: 100vh;
-}
 
-ul.orbit-container {
-  height: 100vh;
+.orbit-slide {
+  max-height: 85vh;
 }
----*/
-
 
 /*---hero section---*/
 
