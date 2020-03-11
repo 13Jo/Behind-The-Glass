@@ -196,13 +196,46 @@ h2 {
   border: .2em solid #141414; 
 }
 
+/*---pricing callout---*/
+
+#pricing .callout {
+  background-color: #fff;
+  font: 500 1rem 'Spartan', 'sans-serif';
+  color: #141414;
+  border: .05em solid #504E4E;
+}
+
+#pricing h2 {
+  font: 700 1.5rem 'Spartan', 'sans-serif';
+  color: #FFB405;
+  -webkit-text-stroke: 0em;
+}
+
 /*---cards---*/
+
+.card {
+  border: .1em solid #141414;
+}
 
 .card .card-divider:first-child {
   background-color: #FFB405;
   color: #141414;
-  border: .1em solid #141414;
+  border-bottom: .1em solid #141414;
 }
+
+.card-divider:last-child {
+  background-color: #504E4E;
+  color: #fff;
+  font-size: .8rem;
+}
+
+.card hr {
+  height: .05em;
+  background-color: #FFB405;
+}
+
+
+
 
 
 /*---footer---*/
