@@ -56,7 +56,7 @@ h1, li.menu-text, nav ul.menu, button {
   text-transform: uppercase;
 }
 
-h1, .title-bar-title, li.menu-text, h2, .callout, h4 {
+h1, .title-bar-title, li.menu-text, h2, h4 {
   font-family: 'Bangers', sans-serif;
 }
 
@@ -108,11 +108,25 @@ h2 {
   font-size: 3rem;
 }
 
+
+@media screen and (max-width: 46em) {  
+  .callout p {
+   font-size: 1.3rem;
+ }
+}
+
+@media screen and (max-width: 39.9375em) {  
+   .callout p {
+    font-size: 1.1rem;
+  }
+}
+
 /*---images---*/
 
 #about img, #store img, #museum img {
   border: .2em solid #141414;
 }
+
 
 
 /*-------5.0 OBJECTS-------*/
@@ -156,7 +170,7 @@ h2 {
 }
 
 @media screen and (max-width: 39.9375em) {
-  #about img, #store img, #museum img {
+  #about img, #store img, #museum img, #pricing img {
       display: none;
   }
 }
@@ -196,6 +210,7 @@ h2 {
   border: .2em solid #141414; 
 }
 
+
 /*---pricing callout---*/
 
 #pricing .callout {
@@ -209,6 +224,14 @@ h2 {
   font: 700 1.5rem 'Spartan', 'sans-serif';
   color: #FFB405;
   -webkit-text-stroke: 0em;
+}
+
+#pricing .small-12:first-child {
+  padding-left: 0;
+}
+
+#pricing  .small-12:last-child {
+  padding-right: 0;
 }
 
 /*---cards---*/
