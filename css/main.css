@@ -193,13 +193,72 @@ h2 {
   border: .2em solid #141414; 
 }
 
+button.orbit-previous, button.orbit-next {
+  z-index: 2;
+}
+
+button.orbit-previous {
+  background-image: url(../img/left_caret.png);
+  cursor: pointer;
+  height: 2rem;
+  width: 3.2rem;
+  margin-left: 1rem;
+}
+
+button.orbit-next {
+  background-image: url(../img/right_caret.png);
+  cursor: pointer;
+  height: 2rem;
+  width: 3.2rem;
+  margin-right: 1rem;
+}
+
+button.orbit-previous:hover, button.orbit-next:hover, button.orbit-previous:focus, button.orbit-next:focus {
+  background: none;
+}
+
+button.orbit-previous:focus {
+  background-image: url(../img/left_caret.png);
+}
+
+button.orbit-next:focus {
+  background-image: url(../img/right_caret.png);
+}
+
+
+button.orbit-next:hover {
+  background-image: url(../img/right_caret_hover.png);
+}
+
+button.orbit-previous:hover {
+  background-image: url(../img/left_caret_hover.png);
+}
+
+nav.orbit-bullets button {
+  background-color: #fff;
+  border: solid 0.1rem #141414;
+  cursor: pointer;
+}
+
+nav.orbit-bullets button:hover {
+  background-color: #141414;
+}
+
+nav.orbit-bullets button.is-active {
+  background-color: #FFB405;
+}
+
 @media screen and (min-width: 40em) {
   .button {
     width: 10rem;
   }
+  button.orbit-previous {
+    margin-left: 2rem;
+  }
+  button.orbit-next {
+    margin-right: 2rem;
+  }
 }
-
-
 
 /*---callout---*/
 
