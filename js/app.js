@@ -42,3 +42,9 @@ $('a[href*="#"]')
   });
 	
 });
+
+jQuery(document).ready(function($) {
+  $('.menu li').click(function() { 
+      document.getElementById("burger").click(); 
+  });
+}(jQuery));
