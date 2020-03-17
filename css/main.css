@@ -52,7 +52,18 @@ body {
   font-family: 'Spartan', 'sans-serif';
 }
 
-h1, li.menu-text, nav ul.menu, button {
+p {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+footer h4 {
+  font-size: 1.75rem;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+h1, li.menu-text, nav ul.menu, button, a.button, footer h4 span {
   text-transform: uppercase;
 }
 
@@ -76,11 +87,11 @@ h3, .menu-text span, footer span {
   font-size: 1rem;
 }
 
-#example-menu li, h2, .title-bar-title, .callout, h4 {
+#example-menu li, h2, .title-bar-title, .callout, h4, footer p a, footer p a:focus {
   color: #FFB405;
 }
 
-header, footer, .top-bar-right a, .title-bar-title span, .menu-text span, footer span, #store, #museum {
+header, footer, .top-bar-right a, .title-bar-title span, .menu-text span, footer span, #store, #museum, footer p a:hover {
   color: #fff;
 }
 
@@ -108,6 +119,15 @@ h2 {
   font-size: 3rem;
 }
 
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  p {
+    line-height: 1.75rem;
+  }
+  footer h4 {
+    margin-top: 0;
+  }
+}
 
 @media screen and (max-width: 46em) {  
   .callout p {
@@ -118,6 +138,13 @@ h2 {
 @media screen and (max-width: 39.9375em) {  
    .callout p {
     font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  p {
+    font-size: 1.1rem;
+    line-height: 2rem;
   }
 }
 
@@ -170,7 +197,7 @@ h2 {
 }
 
 @media screen and (max-width: 39.9375em) {
-  #about img, #store img, #museum img, #pricing img {
+  #about img, #pricing img {
       display: none;
   }
 }
@@ -193,13 +220,85 @@ h2 {
   border: .2em solid #141414; 
 }
 
+button.orbit-previous, button.orbit-next {
+  z-index: 2;
+}
+
+button.orbit-previous {
+  background-image: url(../img/left_caret.png);
+  cursor: pointer;
+  height: 2rem;
+  width: 3.2rem;
+  margin-left: 1rem;
+}
+
+button.orbit-next {
+  background-image: url(../img/right_caret.png);
+  cursor: pointer;
+  height: 2rem;
+  width: 3.2rem;
+  margin-right: 1rem;
+}
+
+button.orbit-previous:hover, button.orbit-next:hover, button.orbit-previous:focus, button.orbit-next:focus {
+  background: none;
+}
+
+button.orbit-previous:focus {
+  background-image: url(../img/left_caret.png);
+}
+
+button.orbit-next:focus {
+  background-image: url(../img/right_caret.png);
+}
+
+
+button.orbit-next:hover {
+  background-image: url(../img/right_caret_hover.png);
+}
+
+button.orbit-previous:hover {
+  background-image: url(../img/left_caret_hover.png);
+}
+
+nav.orbit-bullets button {
+  background-color: #fff;
+  border: solid 0.1rem #141414;
+  cursor: pointer;
+}
+
+nav.orbit-bullets button:hover {
+  background-color: #141414;
+}
+
+nav.orbit-bullets button.is-active {
+  background-color: #FFB405;
+}
+
+footer ul.menu li a {
+  padding: 0.5rem 0.5rem;
+}
+
 @media screen and (min-width: 40em) {
   .button {
     width: 10rem;
   }
+  button.orbit-previous {
+    margin-left: 2rem;
+  }
+  button.orbit-next {
+    margin-right: 2rem;
+  }
+  ul.menu li a {
+    padding: 0.7rem 0.5rem;
+  }
 }
 
-
+@media screen and (min-width: 64em) {
+  ul.menu li a {
+    padding: 0.7rem 1rem;
+  }
+}
 
 /*---callout---*/
 
