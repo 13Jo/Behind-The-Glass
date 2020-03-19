@@ -136,7 +136,7 @@ h2 {
  }
 
  #pricing .callout p {
-   font-size: 1.1rem;
+   font-size: .9rem;
  }
 }
 
@@ -228,6 +228,12 @@ h2 {
   color: #141414;
   border: .2em solid #141414; 
 }
+
+.button:focus {
+  background-color: #FFB405;
+}
+
+
 
 button.orbit-previous, button.orbit-next {
   z-index: 2;
@@ -335,11 +341,11 @@ footer ul.menu li a {
 }
 
 #pricing .small-12:first-child {
-  padding-left: 0;
+  margin-left: 0;
 }
 
 #pricing  .small-12:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 /*---cards---*/
