@@ -127,17 +127,26 @@ h2 {
   footer h4 {
     margin-top: 0;
   }
+
 }
 
 @media screen and (max-width: 46em) {  
   .callout p {
    font-size: 1.3rem;
  }
+
+ #pricing .callout p {
+   font-size: 1.1rem;
+ }
 }
 
 @media screen and (max-width: 39.9375em) {  
    .callout p {
     font-size: 1.1rem;
+  }
+
+  #pricing .callout p {
+    font-size: .9rem;
   }
 }
 
