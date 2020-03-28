@@ -119,6 +119,15 @@ h2 {
   font-size: 3rem;
 }
 
+#events h3 {
+  font-family: 'Sriracha', 'sans-serif';
+  color: #141414; 
+  font-size: 1.2rem;
+}
+
+.card-divider:last-child p {
+  font-size: .9rem;
+}
 /* Medium and up */
 @media screen and (min-width: 40em) {
   p {
