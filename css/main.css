@@ -315,6 +315,30 @@ footer ul.menu li a {
   }
 }
 
+/*-- resize main nav font-size to avoid stacking --*/
+@media screen and (max-width: 50em) {
+  ul.menu li a {
+    font-size: 0.9rem;
+    padding: 0.7rem 0.3rem;
+  }
+}
+
+/*-- resize main nav font-size to avoid stacking --*/
+@media screen and (max-width: 45em) {
+  ul.menu li a {
+    font-size: 0.75rem;
+    padding: 0.7rem 0.3rem;
+  }
+}
+
+/*-- reset main nav font-size in burger fly-out menu on small display --*/
+@media screen and (max-width: 39.9375em) {
+  ul.menu li a {
+    font-size: 1.25rem;
+    padding: 0.7rem 1rem;
+  }
+}
+
 /*---callout---*/
 
 .callout {
@@ -420,6 +444,15 @@ footer ul {
           justify-content: space-between;
   background: url(../img/btg_001.jpg) center center no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /*---navigation---*/
