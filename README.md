@@ -4,9 +4,12 @@ All the files needed for the Behind The Glass website is included in this reposi
 
 Copy the following files and folders, including all of their content, to your server once it has been acquired:
 
-• css folder
-• img folder
-• js folder
-• index.html file
+1. css folder
+
+2. img folder
+
+3. js folder
+
+4. index.html file
 
 This website uses Foundation v6.6.1 for its framework.
